@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Redirigiendo…</title></head>
+<body>
+<script>
+  // destino FIJO: nunca se toma de la URL, así nadie puede usar el puente para redirigir a otro lado
+  var DESTINO = "http://localhost:8000/auth/facebook/callback";
+  // replace: el code no queda en el historial del navegador
+  window.location.replace(DESTINO + window.location.search);
+</script>
+</body>
+</html>
